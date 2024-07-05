@@ -26,8 +26,8 @@ const createCheckoutSession = async (carts, couponId) => {
       billing_address_collection: 'required',
       discounts: discounts,
       mode: 'payment',
-      success_url: 'http://localhost:3000/order-confirm',
-      cancel_url: 'http://localhost:3000',
+      success_url: 'https://shilpkar-bhavan.vercel.app/order-confirm',
+      cancel_url: 'https://shilpkar-bhavan.vercel.app',
     });
 
     return session.id;
